@@ -1,0 +1,59 @@
+Analice los requerimientos y, en sus propias palabras, explique cuál es el problema, y que casos se están considerando para cambiar el valor de la cotización. 
+
+Se está solicitando por parte de la empresa de seguros TK-U, actualmente realiza cotizaciones de forma manual perdiendo tiempo y clientes, pudiendo únicamente generar un máximo de 50 cotizaciones diarias. 
+
+Por lo que es necesario realizar un cotizador automático, para ello proveen un programa base en el cual se debe completar los requerimientos. 
+
+Para generar una cotización la persona a asegurar tiene que ser mayor de edad, se tiene un plan base (Q2,000.00), al cual se le pueden aplicar recargos extras dependiendo de las condiciones del asegurado: 
+
+A) Dependiendo de la edad del asegurado 
+
+Si tiene 18 a 24 años, se les hará un recargo de 10% del precio base; 
+
+Si tiene 25 a 49 años, se les hará un recargo de 20% del precio base; 
+
+Si tiene 50 años o más, se les hará un recargo de 30% del precio base. 
+
+B) Dependiendo de si el asegurado está casado o no y dependiendo también de la edad del cónyuge del asegurado 
+
+C) Dependiendo de la cantidad de hijos o hijas que tenga el asegurado, se aplica un recargo del 20% por cada hijo que quiera asegurar. 
+
+Hay que tener en cuenta que el recargo obligatorio es la edad del asegurado, las demás condiciones pueden variar; así como también que los recargos son acumulativos. 
+
+ 
+
+Diseñe un algoritmo en base al procedimiento presentado, enumere cada acción como un paso e indique las posibles decisiones que se pueden tomar. 
+
+Empresa de seguros TK-U, actualmente realiza cotizaciones de forma manual; 
+
+Ello le lleva a perder tiempo y posibles clientes, generando únicamente 50 cotizaciones diarias; 
+
+Por ello, es necesario generar un cotizador automático; 
+
+Para generar el cotizador automático es necesario hacer las siguientes verificaciones; 
+
+Primero se solicita el nombre de la persona a asegurar; 
+
+Luego se verifica que la edad de la persona a asegurar; 
+
+Si la persona es menor de edad, no se generar cotización; 
+
+Si la persona es mayor de edad, se procede a generar cotización; 
+
+Al generar la cotización, se toma en cuenta que el precio base de la cotización es Q2,000.00; 
+
+Luego se procede a verificar el rango que en el que se encuentra la edad el asegurado para considerar el recargo que se tiene acumular para la cotización; 
+
+Para saber el porcentaje del recargo que se acumulará por la edad del asegurado, verificamos si la edad esta entre: 18 y 24 años, el recargo será del 10%; 25 y 49 años, el recargo será del 20%; 50 años o más, el recargo será del 30%;  
+
+Después se procede a verificar si la persona a asegurar está o no casado,  
+
+En caso que la persona se encuentre casado se procede a verificar la edad de su cónyuge, para considerar el recargo a acumular por la edad de éste, para ello tomamos en cuenta lo siguiente: si la edad esta entre: 18 y 24 años, el recargo será del 10%; 25 y 49 años, el recargo será del 20%; 50 años o más, el recargo será del 30%; 
+
+Luego se verifica si la persona a asegurar tiene hijos o no; 
+
+Si su respuesta es afirmativa, se verifica la cantidad de hijos que tiene, y el recargo por cada hijo es de 20%; 
+
+Luego de todas esas consultas el programa procede a calcular uno a uno los recargos a aplicar a la cotización; 
+
+El programa guarda uno a uno los datos y luego muestra el nombre, el total por recargos extras y el monto total de la cotización 
